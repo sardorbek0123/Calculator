@@ -1,0 +1,104 @@
+body {
+  /* min-width: 100%; */
+  font-family: "Inter", sans-serif;
+  min-height: 100%;
+  background: #242530;
+}
+
+.form {
+  padding-top: 1px;
+}
+
+.container {
+  max-width: 390px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #404258;
+  border: none;
+  height: 78px;
+  width: 78px;
+  flex-shrink: 0;
+
+  margin: 0 0 16px 16px;
+  cursor: pointer;
+}
+
+.button.orange {
+  background-color: #f49d1a;
+}
+
+.button.grey {
+  background-color: #b2b2b2;
+  color: #1B1B1B;
+  font-weight: 500;
+}
+.button.zero {
+  width: 42%;
+  border-radius: 47px;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.display {
+  font-weight: 500;
+  margin-bottom: 57px;
+  margin-top: 30px;
+  display: flex;
+  font-size: 55px;
+  width: 90%;
+  margin-left: 19px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: right;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 404px) {
+  .button {
+    width: 70px;
+    height: 70px;
+    margin: 0 0 12px 12px;
+  }
+
+  .flex {
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .button {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 12px 12px;
+    font-size: 20px;
+  }
+
+  .flex {
+    gap: 5px;
+  }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <section class="calculator">
+      <div class="container">
+        <form class="form">
+          <div>
+            <input
+              type="text"
+              name="display"
+              class="display"
+              id="display"
+              disabled
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="AC"
+              class="button grey"
+              onclick="allClear()"
+            />
+            <input
+              type="button"
+              value="+/-"
+              class="button grey"
+              onclick="convertValue()"
+            />
+            <input
+              type="button"
+              value="%"
+              class="button grey"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="/"
+              class="button orange"
+              onclick="number(value)"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="7"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="8"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="9"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="*"
+              class="button orange"
+              onclick="number(value)"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="4"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="5"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="6"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="-"
+              class="button orange"
+              onclick="number(value)"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="1"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="2"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="3"
+              class="button"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="+"
+              class="button orange"
+              onclick="number(value)"
+            />
+          </div>
+
+          <div class="flex">
+            <input
+              type="button"
+              value="0"
+              class="button zero"
+              onclick="number(value)"
+            />
+            <input
+              type="button"
+              value="."
+              class="button"
+              onclick="number(value)"
+              id="decimal"
+            />
+            <input
+              type="button"
+              value="="
+              class="button orange"
+              onclick="calc()"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
